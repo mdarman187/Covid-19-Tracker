@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.geometry("400x400")
-root.title("Get Covid-19 Details Country Wise")
+root.title("Get Covid-19 Details Country Wise - Md Arman")
 
 def showData():
     from matplotlib import pyplot as plt
@@ -28,5 +28,12 @@ def showData():
              active.append(y["active"])
              deaths.append(y["deaths"])
              recovered.append(y["recovered"])
+       confirmed_patch = mpatches.Patch(color = 'green', label = 'confirmed')
+       recovered_patch = mpatches.Patch(color = 'red', label = 'recovered')
+       active_patch = mpatches.Patch(color = 'blue', label = 'active')
+       deaths_patch = mpatches.Patch(color = 'black', label = 'deaths')
+       plt.legend(handles=[confirmed_patch,recovered_patch,active_patch,deaths_patch])
+       
+       
              
     
