@@ -42,10 +42,10 @@ def showData():
                 plt.bar(country_name[x], active[x], color = 'blue')
                 plt.bar(country_name[x], recovered[x], color = 'red')
              plt.bar(country_name[x], deaths[x], color = 'black')
-        plt.title('Current Covid Cases')
-        plt.xlabel('Country name')
-        plt.ylabel('Cases(in millions)')
-        plt.show()
+             plt.title('Current Covid Cases')
+             plt.xlabel('Country name')
+             plt.ylabel('Cases(in millions)')
+             plt.show()
      except Exception as e:
         print("Enter correct name")
         
